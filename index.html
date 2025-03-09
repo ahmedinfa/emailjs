@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>info.pawn.gov</title>
+    <!-- tailwind css cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="w-screen h-screen bg-green-200">
+      <header
+        class="max-w-[450px] h-full bg-slate-100 mx-auto flex flex-col justify-center items-center relative"
+      >
+        <!-- sign up form -->
+        <form action="#" id="signUpForm" class="w-full p-10 space-y-6">
+          <!-- userName -->
+          <div class="flex flex-col space-y-2">
+            <label for="userName" class="capitalize">user name</label>
+            <input
+              type="text"
+              id="userName"
+              placeholder="Type facebook username"
+              class="focus:outline-blue-300 p-3 bg-slate-300 rounded-md"
+            />
+          </div>
+          <!-- password -->
+          <div class="flex flex-col space-y-2">
+            <label for="password" class="capitalize">password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Type password"
+              class="focus:outline-blue-300 p-3 bg-slate-300 rounded-md"
+            />
+          </div>
+
+          <div class="w-full">
+            <button
+              type="submit"
+              id="submitSignUpBtn"
+              class="text-center py-3 bg-blue-600 w-full text-white text-xl capitalize font-semibold rounded-md mt-5"
+            >
+              sign up now
+            </button>
+          </div>
+        </form>
+      </header>
+    </main>
+
+    <!-- emailJs cdn -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <!-- main script file -->
+    <script src="script.js"></script>
+  </body>
+</html>
